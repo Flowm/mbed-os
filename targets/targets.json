@@ -1003,7 +1003,7 @@
         "detect_code": ["0775"],
         "default_lib": "small",
         "device_has_add": ["ANALOGOUT", "CAN", "CRC", "SERIAL_FC"],
-        "release_versions": ["2"],
+        "release_versions": ["2", "5"],
         "device_name": "STM32F303K8"
     },
     "NUCLEO_F303RE": {

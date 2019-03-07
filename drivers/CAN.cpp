@@ -75,9 +75,9 @@ int CAN::write(CANMessage msg)
 
 int CAN::read(CANMessage &msg, int handle)
 {
-    lock();
+    // XXX: Remove mutex to fix read in CAN RxIrq
+    // https://github.com/ARMmbed/mbed-os/issues/9495
     int ret = can_read(&_can, &msg, handle);
-    unlock();
     return ret;
 }
 
